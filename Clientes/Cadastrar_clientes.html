@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius:4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<form action="Salvar_clientes.php" method="post">
+  <label for="id">ID:</label>
+  <input type="text" id="id" name="id"><br>
+
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome"><br>
+
+  <label for="telefone">Telefone:</label>
+  <input type="text" id="telefone" name="telefone"><br>
+
+  <label for="endereco">Endereco:</label>
+  <input type="text" id="endereco" name="endereco"><br>
+
+
+  <input type="submit" value="Enviar">
+</form>
+
+
+</body>
+</html>

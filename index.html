@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Sistema</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Petshop - Sistema</h1>
+        <nav>
+            <ul>
+                <li><a href="Clientes/Listar_clientes.php">Clientes</a></li>
+                <li><a href="Produtos/Listar_produtos.php">Produtos</a></li>
+                <li><a href="Serviços/Listar_servicos.php">Serviços</a></li>
+                <li><a href="Animais/Listar_animais.php">Animais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Seção Clientes -->
+        <div id="clientes" class="section">
+            <h2>Clientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td>joao.silva@example.com</td>
+                        <td>(11) 98765-4321</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Seção Produtos -->
+        <div id="produtos" class="section">
+            <h2>Produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ração para Cães</td>
+                        <td>R$ 50,00</td>
+                        <td>100</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Seção Serviços -->
+        <div id="servicos" class="section">
+            <h2>Serviços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Tosa</td>
+                        <td>Serviço de tosa para cães e gatos.</td>
+                        <td>R$ 80,00</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Seção Animais -->
+        <div id="animais" class="section">
+            <h2>Animais</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Espécie</th>
+                        <th>Raça</th>
+                        <th>Cliente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rex</td>
+                        <td>Cão</td>
+                        <td>Labrador</td>
+                        <td>João Silva</td>
+                    </tr>
+                    <!-- Mais linhas aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
