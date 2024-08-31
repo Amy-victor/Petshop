@@ -60,6 +60,7 @@ if ($result->num_rows > 0) {
                     <th>Nome</th>
                     <th>Telefone</th>
                     <th>Endereço</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>";
@@ -71,6 +72,7 @@ if ($result->num_rows > 0) {
                 <td>" . htmlspecialchars($row["nome"]) . "</td>
                 <td>" . htmlspecialchars($row["telefone"]) . "</td>
                 <td>" . htmlspecialchars($row["endereco"]) . "</td>
+                <td><a href=\"excluir_clientes.php?id=".$row["id"]."\">Excluir</a></td>
               </tr>";
     }
 
